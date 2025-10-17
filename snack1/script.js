@@ -6,6 +6,8 @@ Stampare a schermo la bici con peso minore.
 */
 
 //creo l'array di oggetti
+//all'interno delgi oggetti inserisco:
+//nome e peso della bicicletta (proprietà)
 const biciclette = [
     {
         nome: 'Canyon Ultimate CF 7',
@@ -28,6 +30,13 @@ const biciclette = [
         peso: 6.5
     }
 ];
-//all'interno delgi oggetti inserisco il nome ed il peso della bicicletta (proprietà)
-//creo un ciclo for che scorre l'arrray di oggetti
+console.log(biciclette);
+
+//dichiaro una variabile let a cui assegno il primo indice dell'array di bici
+//la variabile mi occorre per poter fare la comparazione nel ciclo for
+let biciLeggera = biciclette[0]
+console.log(biciLeggera);
+
+//creo un ciclo for che scorre l'arrray di oggetti:
+
 //imposto delle consizioni per selezionare solo la bici con il peso minore
