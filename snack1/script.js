@@ -30,12 +30,12 @@ const biciclette = [
         peso: 6.5
     }
 ];
-console.log(biciclette);
+//console.log(biciclette);
 
 //dichiaro una variabile let a cui assegno il primo indice dell'array di bici
 //la variabile mi occorre per poter fare la comparazione nel ciclo for
 let biciLeggera = biciclette[0]
-console.log(biciLeggera);
+//console.log(biciLeggera);
 
 //creo un ciclo for che scorre l'arrray di oggetti:
 for (let i = 1; i < biciclette.length; i++) {
@@ -43,7 +43,8 @@ for (let i = 1; i < biciclette.length; i++) {
     if (biciclette[i].peso < biciLeggera.peso) {
         //allora aggiorno la bici leggera
         biciLeggera = biciclette[i]
-        console.log(biciLeggera);
+        //console.log(biciLeggera);
     }
 }
-//imposto delle consizioni per selezionare solo la bici con il peso minore
+//stampo il risultato
+console.log(`La bici più leggera è: ${biciLeggera.nome} con un peso di ${biciLeggera.peso} kg`);
