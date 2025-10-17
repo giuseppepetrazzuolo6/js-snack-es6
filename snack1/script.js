@@ -38,5 +38,12 @@ let biciLeggera = biciclette[0]
 console.log(biciLeggera);
 
 //creo un ciclo for che scorre l'arrray di oggetti:
-
+for (let i = 1; i < biciclette.length; i++) {
+    //se il peso della bici in posizione [i] è minore della bici leggera
+    if (biciclette[i].peso < biciLeggera.peso) {
+        //allora aggiorno la bici leggera
+        biciLeggera = biciclette[i]
+        console.log(biciLeggera);
+    }
+}
 //imposto delle consizioni per selezionare solo la bici con il peso minore
