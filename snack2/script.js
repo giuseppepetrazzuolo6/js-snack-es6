@@ -39,6 +39,9 @@ const team = [
 
     },
 ]
-
+//funzione che genera numeri randomici
+function randomNumber(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 
 
