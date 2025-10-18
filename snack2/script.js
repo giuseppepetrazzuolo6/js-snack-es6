@@ -48,4 +48,15 @@ for (let i = 0; i < team.length; i++) {
     team[i].falliSubiti = randomNumber(5, 30)
     team[i].puntiFatti = randomNumber(1, 80)
 }
+//console.log('team', team)
+//array vuoto
+const workedArray = []
+//ciclo for per scorrere gli elementi di team da inserire dentro l'array vuoto
+for (let i = 0; i < team.length; i++) {
+    //array con elementi
+    workedArray.push(`${team[i].nome} - falli subiti: ${team[i].falliSubiti}`)
+    //array di oggetti di cui proprietà sono 'nome' e 'falli subiti'
+    //workedArray.push({ nome: team[i].nome, falliSubiti: team[i].falliSubiti })
+}
+console.log(workedArray);
 
