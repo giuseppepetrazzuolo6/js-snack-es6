@@ -43,5 +43,9 @@ const team = [
 function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
-
+//for per assegnare numeri randomici alle proprietà degli oggetti
+for (let i = 0; i < team.length; i++) {
+    team[i].falliSubiti = randomNumber(5, 30)
+    team[i].puntiFatti = randomNumber(1, 80)
+}
 
